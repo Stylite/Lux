@@ -2,12 +2,13 @@ package me.stylite.lux
 
 import net.dv8tion.jda.core.entities.{Message, MessageChannel, User}
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent
+import me.stylite.lux.PrefixManager
 
 class CommandContext(val event: MessageReceivedEvent) {
 
   //Basic stuff that is just from the event
   val channel: MessageChannel = event.getChannel
-  val PREFIX = "!>"
+  val PREFIX = PrefixManager.PREFIX
   val message: Message = event.getMessage
   val eevent = event
   val isNsfw = event.getTextChannel.isNSFW

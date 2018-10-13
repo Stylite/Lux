@@ -2,10 +2,10 @@ package me.stylite.lux
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent
 import net.dv8tion.jda.core.hooks.ListenerAdapter
+import me.stylite.lux.PrefixManager
 
 object CommandManager extends ListenerAdapter {
-  val PREFIX = "!>"
-
+  val PREFIX = PrefixManager.PREFIX
   val commands: Set[BotCommand] = Set(
   )
 
