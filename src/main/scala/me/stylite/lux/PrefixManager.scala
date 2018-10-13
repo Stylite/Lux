@@ -2,5 +2,5 @@ package me.stylite.lux
 
 object PrefixManager {
 
-  var PREFIX = "!!"
+  var prefix: Any = "!!"
 }
